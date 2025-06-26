@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru"> <!-- Изменено на русский язык -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zabor.Media</title>
+    
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" type="text/css" href="./src/styles/slick.css"/>
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./src/img/Favicon.jpg">
+    
+    <!-- Подключение скриптов -->
+    <script type="text/javascript" src="./src/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./src/js/slick.min.js"></script>
+    
+    <!-- Инициализация слайдера -->
+    <script>
+        $(document).ready(function(){
+            $('.section3__cardscroll').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                arrows: false,
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+
+    <header class="header-pages header-path">
+        <div class="header__menu container">
+            <!-- Логотип -->
+            <div class="header__menu__logo_about">
+                <a href="#">
+                    <img class="header__menu__logo_about-img" src="src/img/zbr.svg" alt="">
+                </a>
+            </div>
+
+            <!-- Социальные кнопки и меню -->
+            <div class="header__menu_socialmed">
+                <!-- Социальные кнопки -->
+                <a href="#" class="header__menusocialmed-button1">
+                    <img src="./src/img/TG_Link.svg" alt="Telegram">
+                </a>
+                <a href="#" class="header__menusocialmed-button2 margin_button1">
+                    <img src="./src/img/VK_Link.svg" alt="VKontakte">
+                </a>
+                
+                <!-- Выпадающее меню - ОБНОВЛЕННАЯ ВЕРСИЯ -->
+                <div class="dropdown-wrapper">
+                    <button class="header__menusocialmed-button_Menu button-style1" 
+                            aria-expanded="false" 
+                            aria-controls="dropdown-menu">
+                        Меню
+                        <span class="dropdown-arrow">▼</span> <!-- Добавлена стрелка -->
+                    </button>
+                    
+                    <ul id="dropdown-menu" class="dropdown-menu" aria-hidden="true">
+                        <li>
+                            <a href="index.html">
+                                <img src="img/logo/home.svg" alt="">
+                                <span>Главная</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="graffitys.html">
+                                <img src="img/logo/question.svg" alt="">
+                                <span>Граффити</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="authors.html">
+                                <img src="img/logo/blogPost.svg" alt="">
+                                <span>Авторы</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="paths.html">
+                                <img src="img/logo/cart.svg" alt="">
+                                <span>Маршруты</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="map.html"> <!-- Изменена ссылка для карты -->
+                                <img src="img/logo/question.svg" alt="">
+                                <span>Карта</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__start_block container">
+            <h5>ГОТОВЫЕ</h5>
+            <h4>МАРШРУТЫ</h4>
+            <p>Открывайте для себя Нижний 
+            </br> с помощью готовых маршрутов.
+            </p>
+        </div>
+
+    </header>
+
+
+    <main class="container">
+        <section class="section1 container">
+            <div class="filter__button margin_filters">
+                <button class="filter__button-date button-style1">
+                    <p>По дате публикации</p>
+                    <img src="./src/img/chevron-down.svg">
+                </button>
+                <button class="filter__button-place button-style1">
+                    <p>Все районы</p>
+                    <img src="./src/img/chevron-down.svg">
+                </button>
+            </div>
+
+            
+        </section>
+
+       
+
+        <section class="section4">
+
+            <div class="sec4__cards">
+
+                <div class="sec4__card" id="1st-card">
+                    <div class="sec4__card_preview">
+                        <img class="article-style3" src="./src/img/img_article/route1.jpg" alt="Graffity">
+                        <button class="sec3__card-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                    </div>
+                    <h2>МАРШРУТ №1</h2>
+                        <p>Кроме адреса и названия работы на каждой точке собрана информация про работы и их создателей.&nbsp;Маршрут состоит из 17 точек и сосредоточен на улице Алексеевской и её окрестностях</p>
+                </div>
+
+                <div class="sec4__card" id="2nd-card">
+                    <div class="sec4__card_preview">
+                        <img class="article-style3" src="./src/img/img_article/route2.jpg" alt="Graffity">
+                        <button class="sec3__card-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                    </div>
+                    <h2>МАРШРУТ №2</h2>
+                        <p>Вы встретите объекты фестиваля "МЕСТО" разных лет. Маршрут состоит из 13 точек начинается на ул. Ильинской и заканчивается в Почаинском овраге. Ваша прогулка займет около 1.5 часа</p>
+                </div>
+
+                <div class="sec4__card" id="3th-card">
+                    <div class="sec4__card_preview">
+                        <img class="article-style3" src="./src/img/img_article/route3.jpg" alt="Graffity">
+                        <button class="sec3__card-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                    </div>
+                    <h2>МАРШРУТ №3</h2>
+                        <p>В новом маршруте преимущественно собраны монументальные работы Канавинского района. Маршрут состоит из 11 точек начинается за Ярмаркой и заканчивается у стадиона.</p>
+                </div>
+
+                <div class="sec4__card" id="4th-card">
+                    <div class="sec4__card_preview">
+                        <img class="article-style3" src="./src/img/img_article/route4.jpg" alt="Graffity">
+                        <button class="sec3__card-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                    </div>
+                    <h2>МАРШРУТ №4</h2>
+                        <p>В новом маршруте в основном представлены работы Нижегородских художников. Маршрут состоит из 12 точек, начинаясь на площади Горького и заканчиваясь на Окском съезде.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section6">
+
+            <div class="section2-container sec6__style">
+                <!-- <div class="bannerLink_gradient">
+                    <p class="bannerLink-upText">Местоположение</p>
+                </div> -->
+
+                <h2>Составляйте маршруты самостоятельно
+                    с&nbsp;помощью интерактивной карты города</h2>
+
+                <div class="section2_bottomStuff section4_bottomStuff">
+                    <p>С помощью интерактивной карты вы можете включить
+                        граффити в привычные для вас прогулки. Встречайте
+                        арт-объекты даже по пути в магазин.</p>
+                    <button class="button-style2">Перейти<img src="./src/img/ArrowRight.svg"></button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+    <footer class="container">
+        <div class="footer">
+            <div class="footer_upperText">
+                <ul>
+                    <li>Маршруты</li>
+                    <li>Карта</li>
+                    <li>Граффити</li>
+                    <li>Авторы</li>
+                    <li>О нас</li>
+                </ul>
+                <img class="header__menu__logo_about-img" src="src/img/zbr.svg" href="#" alt="Logo">
+            </div>
+            <img class="MostMedia_footer" src="src/img/zabor-media.svg">
+
+            <div class="footer_bottomStroke">
+                <div class="footer_textPlace">
+                    <p>Медиа о граффити Нижнего Новгорода</p>
+                    <a href="mailto:info@graffiti-most.ru">info@graffiti-most.ru</a>
+                </div>
+                <div class="header__menu_socialmed">
+                    <div class="header__menusocialmed-button1">
+                        <img src="./src/img/TG_Link.svg" href="#">
+                    </div>
+                    <div class="header__menusocialmed-button2">
+                        <img src="./src/img/VK_Link.svg" href="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru"> <!-- Изменено на русский язык -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zabor.Media</title>
+    
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" type="text/css" href="./src/styles/slick.css"/>
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./src/img/Favicon.jpg">
+    
+    <!-- Подключение скриптов -->
+    <script type="text/javascript" src="./src/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./src/js/slick.min.js"></script>
+    
+    <!-- Инициализация слайдера -->
+    <script>
+        $(document).ready(function(){
+            $('.section3__cardscroll').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                arrows: false,
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+
+    <header class="header-pages header-graffiti">
+        <div class="header__menu container">
+            <!-- Логотип -->
+            <div class="header__menu__logo_about">
+                <a href="#">
+                    <img class="header__menu__logo_about-img" src="src/img/zbr.svg" alt="">
+                </a>
+            </div>
+
+            <!-- Социальные кнопки и меню -->
+            <div class="header__menu_socialmed">
+                <!-- Социальные кнопки -->
+                <a href="#" class="header__menusocialmed-button1">
+                    <img src="./src/img/TG_Link.svg" alt="Telegram">
+                </a>
+                <a href="#" class="header__menusocialmed-button2 margin_button1">
+                    <img src="./src/img/VK_Link.svg" alt="VKontakte">
+                </a>
+                
+                <!-- Выпадающее меню - ОБНОВЛЕННАЯ ВЕРСИЯ -->
+                <div class="dropdown-wrapper">
+                    <button class="header__menusocialmed-button_Menu button-style1" 
+                            aria-expanded="false" 
+                            aria-controls="dropdown-menu">
+                        Меню
+                        <span class="dropdown-arrow">▼</span> <!-- Добавлена стрелка -->
+                    </button>
+                    
+                    <ul id="dropdown-menu" class="dropdown-menu" aria-hidden="true">
+                        <li>
+                            <a href="index.html">
+                                <img src="img/logo/home.svg" alt="">
+                                <span>Главная</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="graffitys.html">
+                                <img src="img/logo/question.svg" alt="">
+                                <span>Граффити</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="authors.html">
+                                <img src="img/logo/blogPost.svg" alt="">
+                                <span>Авторы</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="paths.html">
+                                <img src="img/logo/cart.svg" alt="">
+                                <span>Маршруты</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="map.html"> <!-- Изменена ссылка для карты -->
+                                <img src="img/logo/question.svg" alt="">
+                                <span>Карта</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__start_block container">
+            <h5>ГАЛЕРЕЯ</h5>
+            <h4>ГРАФФИТИ</h4>
+            <p>Узнайте о смыслах граффити
+                <br>и процессах их создания.
+            </p>
+        </div>
+
+    </header>
+
+    <main class="container">
+        <section class="section1_authors">
+
+            <div class="filters_for_search margin_filters">
+                <div class="filter__button">
+                    <button class="filter__button-date button-style1">
+                        <p>По дате публикации</p>
+                        <img src="./src/img/chevron-down.svg">
+                    </button>
+                    <button class="filter__button-place button-style1">
+                        <p>Все районы</p>
+                        <img src="./src/img/chevron-down.svg">
+                    </button>
+                </div>
+                <form class="search-button">
+                    <input type="text" placeholder="Поиск" class="search-input button-style1">
+                    <button type="submit" class="search-icon"><img src="./src/img/searchButton.svg"></button>
+                </form>
+            </div>
+
+            <div class="cards_container">
+
+                <div class="graffitys_card1" id="1st-card">
+                    <div class="graffitys_card1_preview">
+                        <img class="graffitys_card1-img article-style2" src="./src/img/img_article/graffiti_cont1_1.jpg"
+                            alt="Graffity">
+                        <button class="graffitys_card1-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                    </div>
+
+                    <div class="card__article__text-part">
+                        <p class="card__article-place">Алексеевская 37а</p>
+                    </div>
+                    <h2>Hypno</h2>
+                    <p>Лёша Мелки</p>
+                </div>
+
+                <div class="graffitys_card1" id="2st-card">
+                    <div class="graffitys_card1_preview">
+                        <img class="graffitys_card1-img article-style2" src="./src/img/img_article/graffiti_cont1_2.jpg"
+                            alt="Graffity">
+                        <button class="graffitys_card1-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                    </div>
+
+                    <div class="card__article__text-part">
+                        <p class="card__article-place">пл. Горького 4А</p>
+                    </div>
+                    <h2>Escape</h2>
+                    <p>Лев Кайс</p>
+                </div>
+
+                <div class="graffitys_card1" id="3st-card">
+                    <div class="graffitys_card1_preview">
+                        <img class="graffitys_card1-img article-style2" src="./src/img/img_article/graffiti_cont1_3.jpg"
+                            alt="Graffity">
+                        <button class="graffitys_card1-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                    </div>
+
+                    <div class="card__article__text-part">
+                        <p class="card__article-place">Ошарская 98к1</p>
+                    </div>
+                    <h2>Портал</h2>
+                    <p>Никита Этогде</p>
+                </div>
+
+            </div>
+
+
+            <div class="banner">
+
+                <div class="graffitys_banner">
+                    <img class="graffitys_card1-img article-style4" src="./src/img/img_article/graffiti_bigban_1.jpg"
+                        alt="Graffity">
+                    <button class="graffitys_card1-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                </div>
+
+                <div class="card__article__text-part">
+                    <p class="card__article-place">Ошарская 98к1</p>
+                </div>
+                <h2>Крокодил</h2>
+                <p class="p_banner">Несколько авторов</p>
+
+            </div>
+
+
+            <div class="cards_container">
+
+                <div class="graffitys_card1" id="1st-card">
+                    <div class="graffitys_card1_preview">
+                        <img class="graffitys_card1-img article-style2" src="./src/img/img_article/graffiti_cont2_1.jpg"
+                            alt="Graffity">
+                        <button class="graffitys_card1-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                    </div>
+
+                    <div class="card__article__text-part">
+                        <p class="card__article-place">Ошарская 8</p>
+                    </div>
+                    <h2>Без названия</h2>
+                    <p>Андрей Оленев</p>
+                </div>
+
+                <div class="graffitys_card1" id="2st-card">
+                    <div class="graffitys_card1_preview">
+                        <img class="graffitys_card1-img article-style2" src="./src/img/img_article/graffiti_cont2_2.jpg"
+                            alt="Graffity">
+                        <button class="graffitys_card1-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                    </div>
+
+                    <div class="card__article__text-part">
+                        <p class="card__article-place">Грузинская 11</p>
+                    </div>
+                    <h2>Суперклей</h2>
+                    <p>Никита Nomerz</p>
+                </div>
+
+                <div class="graffitys_card1" id="3st-card">
+                    <div class="graffitys_card1_preview">
+                        <img class="graffitys_card1-img article-style2" src="./src/img/img_article/graffiti_cont2_3.jpg"
+                            alt="Graffity">
+                        <button class="graffitys_card1-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                    </div>
+
+                    <div class="card__article__text-part">
+                        <p class="card__article-place">Ошарская 98к1</p>
+                    </div>
+                    <h2>superstructure</h2>
+                    <p>Никита Мера</p>
+                </div>
+
+            </div>
+
+            <div class="cards_container">
+
+                <div class="graffitys_card1" id="1st-card">
+                    <div class="graffitys_card1_preview">
+                        <img class="graffitys_card1-img article-style2" src="./src/img/img_article/graffiti_cont3_1.jpg"
+                            alt="Graffity">
+                        <button class="graffitys_card1-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                    </div>
+
+                    <div class="card__article__text-part">
+                        <p class="card__article-place">Пролетарская 5</p>
+                    </div>
+                    <h2>Block crew</h2>
+                    <p>Алексей Main</p>
+                </div>
+
+                <div class="graffitys_card1" id="2st-card">
+                    <div class="graffitys_card1_preview">
+                        <img class="graffitys_card1-img article-style2" src="./src/img/img_article/graffiti_cont3_2.jpg"
+                            alt="Graffity">
+                        <button class="graffitys_card1-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                    </div>
+
+                    <div class="card__article__text-part">
+                        <p class="card__article-place">Карла Маркса 22</p>
+                    </div>
+                    <h2>Без названия</h2>
+                    <p>Ваня Kseor</p>
+                </div>
+
+                <div class="graffitys_card1" id="3st-card">
+                    <div class="graffitys_card1_preview">
+                        <img class="graffitys_card1-img article-style2" src="./src/img/img_article/graffiti_cont3_3.jpg"
+                            alt="Graffity">
+                        <button class="graffitys_card1-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                    </div>
+
+                    <div class="card__article__text-part">
+                        <p class="card__article-place">Большая Покровская 42Б</p>
+                    </div>
+                    <h2>Древние люди</h2>
+                    <p>Кирилл Oper</p>
+                </div>
+
+            </div>
+
+
+            <div class="banner">
+
+                <div class="graffitys_banner">
+                    <img class="graffitys_card1-img article-style4" src="./src/img/img_article/graffiti_bigban_2.jpg"
+                        alt="Graffity">
+                    <button class="graffitys_card1-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                </div>
+
+                <div class="card__article__text-part">
+                    <p class="card__article-place">Керченская 20</p>
+                </div>
+                <h2>Падение II</h2>
+                <p class="p_banner">Рустам Qbic</p>
+
+            </div>
+
+            <div class="cards_container">
+
+                <div class="graffitys_card1" id="1st-card">
+                    <div class="graffitys_card1_preview">
+                        <img class="graffitys_card1-img article-style2" src="./src/img/img_article/graffiti_cont4_1.jpg"
+                            alt="Graffity">
+                        <button class="graffitys_card1-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                    </div>
+
+                    <div class="card__article__text-part">
+                        <p class="card__article-place">Ильинская улица 79А</p>
+                    </div>
+                    <h2>Амбиции</h2>
+                    <p>Gromov</p>
+                </div>
+
+                <div class="graffitys_card1" id="2st-card">
+                    <div class="graffitys_card1_preview">
+                        <img class="graffitys_card1-img article-style2" src="./src/img/img_article/graffiti_cont4_2.jpg"
+                            alt="Graffity">
+                        <button class="graffitys_card1-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                    </div>
+
+                    <div class="card__article__text-part">
+                        <p class="card__article-place">Алексеевская 35А</p>
+                    </div>
+                    <h2>Без названия</h2>
+                    <p>Никита Этогде</p>
+                </div>
+
+                <div class="graffitys_card1" id="3st-card">
+                    <div class="graffitys_card1_preview">
+                        <img class="graffitys_card1-img article-style2" src="./src/img/img_article/graffiti_cont4_3.jpg"
+                            alt="Graffity">
+                        <button class="graffitys_card1-button button-arrow"><img src="./src/img/Arrow1.svg"></button>
+                    </div>
+
+                    <div class="card__article__text-part">
+                        <p class="card__article-place">Алексеевская 35А</p>
+                    </div>
+                    <h2>Без названия</h2>
+                    <p>Гоша New</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer class="container">
+        <div class="footer">
+            <div class="footer_upperText">
+                <ul>
+                    <li>Маршруты</li>
+                    <li>Карта</li>
+                    <li>Граффити</li>
+                    <li>Авторы</li>
+                    <li>О нас</li>
+                </ul>
+                <img class="header__menu__logo_about-img" src="src/img/zbr.svg" href="#" alt="Logo">
+            </div>
+            <img class="MostMedia_footer" src="src/img/zabor-media.svg">
+
+            <div class="footer_bottomStroke">
+                <div class="footer_textPlace">
+                    <p>Медиа о граффити Нижнего Новгорода</p>
+                    <a href="mailto:info@graffiti-most.ru">info@graffiti-most.ru</a>
+                </div>
+                <div class="header__menu_socialmed">
+                    <div class="header__menusocialmed-button1">
+                        <img src="./src/img/TG_Link.svg" href="#">
+                    </div>
+                    <div class="header__menusocialmed-button2">
+                        <img src="./src/img/VK_Link.svg" href="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/app.js"></script>
+</body>
+</html>

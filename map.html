@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru"> <!-- Изменено на русский язык -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zabor.Media</title>
+    
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" type="text/css" href="./src/styles/slick.css"/>
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./src/img/Favicon.jpg">
+    
+    <!-- Подключение скриптов -->
+    <script type="text/javascript" src="./src/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./src/js/slick.min.js"></script>
+    
+    <!-- Инициализация слайдера -->
+    <script>
+        $(document).ready(function(){
+            $('.section3__cardscroll').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                arrows: false,
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+
+    <header class="header-pages header-map">
+        <div class="header__menu container">
+            <!-- Логотип -->
+            <div class="header__menu__logo_about">
+                <a href="#">
+                    <img class="header__menu__logo_about-img" src="src/img/zbr.svg" alt="">
+                </a>
+            </div>
+
+            <!-- Социальные кнопки и меню -->
+            <div class="header__menu_socialmed">
+                <!-- Социальные кнопки -->
+                <a href="#" class="header__menusocialmed-button1">
+                    <img src="./src/img/TG_Link.svg" alt="Telegram">
+                </a>
+                <a href="#" class="header__menusocialmed-button2 margin_button1">
+                    <img src="./src/img/VK_Link.svg" alt="VKontakte">
+                </a>
+                
+                <!-- Выпадающее меню - ОБНОВЛЕННАЯ ВЕРСИЯ -->
+                <div class="dropdown-wrapper">
+                    <button class="header__menusocialmed-button_Menu button-style1" 
+                            aria-expanded="false" 
+                            aria-controls="dropdown-menu">
+                        Меню
+                        <span class="dropdown-arrow">▼</span> <!-- Добавлена стрелка -->
+                    </button>
+                    
+                    <ul id="dropdown-menu" class="dropdown-menu" aria-hidden="true">
+                        <li>
+                            <a href="index.html">
+                                <img src="img/logo/home.svg" alt="">
+                                <span>Главная</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="graffitys.html">
+                                <img src="img/logo/question.svg" alt="">
+                                <span>Граффити</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="authors.html">
+                                <img src="img/logo/blogPost.svg" alt="">
+                                <span>Авторы</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="paths.html">
+                                <img src="img/logo/cart.svg" alt="">
+                                <span>Маршруты</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="map.html"> <!-- Изменена ссылка для карты -->
+                                <img src="img/logo/question.svg" alt="">
+                                <span>Карта</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__start_block container">
+            <h5>интерактивная</h5>
+            <h4>КАРТА <br>ГРАФФИТИ</h4>
+        </div>
+
+    </header>
+
+
+    <main class="container">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afc3bea55c530806005a05b84d88d3966053646dbedca2a012f3e1e7ffd683b04&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
+    </main>
+
+    <footer class="container">
+        <div class="footer">
+            <div class="footer_upperText">
+                <ul>
+                    <li>Маршруты</li>
+                    <li>Карта</li>
+                    <li>Граффити</li>
+                    <li>Авторы</li>
+                    <li>О нас</li>
+                </ul>
+                <img class="header__menu__logo_about-img" src="src/img/zbr.svg" href="#" alt="Logo">
+            </div>
+            <img class="MostMedia_footer" src="src/img/zabor-media.svg">
+
+            <div class="footer_bottomStroke">
+                <div class="footer_textPlace">
+                    <p>Медиа о граффити Нижнего Новгорода</p>
+                    <a href="mailto:info@graffiti-most.ru">info@graffiti-most.ru</a>
+                </div>
+                <div class="header__menu_socialmed">
+                    <div class="header__menusocialmed-button1">
+                        <img src="./src/img/TG_Link.svg" href="#">
+                    </div>
+                    <div class="header__menusocialmed-button2">
+                        <img src="./src/img/VK_Link.svg" href="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/app.js"></script>
+</body>
+</html>
